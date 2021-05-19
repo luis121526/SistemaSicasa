@@ -47,7 +47,8 @@ $(document).ready(function(){
       ?>
     <tbody>
         <tr>
-            <td><?php echo $fila['id'] ?></td>
+            <td><?php echo $fila['id']
+            //hola mundo ?></td>
             <td><?php echo $fila['nombre'] ?></td>
             <td><?php echo $fila['apellido'] ?></td>
             <td><?php echo $fila['nombre_usuario'] ?></td>
@@ -56,6 +57,7 @@ $(document).ready(function(){
             <td><?php echo $fila['id_cargo'] ?></td>
             <td><?php echo $fila['id_reporte'] ?></td>
             <td>
+              
             <img width="65" height="65" src="data:<?php echo $fila[8]; ?>;base64,<?php echo  base64_encode($fila['img_perfil']); ?>"> 
             </td> 
         </tr>
