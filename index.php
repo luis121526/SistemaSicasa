@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <body>	<div id="contenedor1">
-			
+			<!--hola-->
 		<form method="POST" action="Logica/valida.php">
 			<div class="logo">
 			<div class="text-center">
