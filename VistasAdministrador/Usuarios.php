@@ -36,17 +36,19 @@ $(document).ready(function(){
  <table id="tablai" class="table table">
       <h6 class="text-center">Usuarios Registrados </h6>
           <thead>
-          	<tr>
-          		 <?php
-      $query4=mysqli_query($conexion,"SHOW COLUMNS FROM usuarios FROM mibd");
-      while($fila0=mysqli_fetch_row($query4)){ 
-             echo "<th>$fila0[0]</th>";
-		      }
-		  ?>
-		</tr>
-    </thead>
+          <tr>
+          <th>id</th>
+          <th>nombre</th>
+          <th>apellido</th>
+          <th>nombre_usuario</th>
+          <th>contraseña</th>
+          <th>departamento</th>
+          <th>id_cargo</th>
+          <th>img_perfil</th>
+          </tr>
+     </thead>
     <?php
-      $query4=mysqli_query($conexion,"SELECT * FROM usuarios");
+      $query4=mysqli_query($conexion,"SELECT id,nombre,apellido,nombre_usuario,contra,departamento,id_cargo,img_perfil FROM usuarios");
       while($fila=mysqli_fetch_assoc($query4)){ 
       ?>
     <tbody>
@@ -59,7 +61,6 @@ $(document).ready(function(){
             <td><?php echo $fila['contra'] ?></td>
             <td><?php echo $fila['departamento'] ?></td>
             <td><?php echo $fila['id_cargo'] ?></td>
-            <td><?php echo $fila['id_reporte'] ?></td>
             <td>
               
             <img width="65" height="65" src="data:<?php echo $fila[8]; ?>;base64,<?php echo  base64_encode($fila['img_perfil']); ?>"> 
@@ -71,6 +72,58 @@ $(document).ready(function(){
   ?>
 </table>
 </div>
+<div class="crud">
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregar">Agregar</button>
+<button class="btn btn-warning"> Modificar</button>
+<button class="btn btn-danger"> Eliminar</button>
+
+</div>
+
+
+
+<!-- Modal agregar -->
+<div id="agregar" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal  agregar  contenido-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Registro de nuevo usuario</h4>
+      </div>
+      <div class="modal-body">
+      <form method="POST" action="../Logica/altas_usuarios.php">
+  <div class="mb-3">
+    <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="apellido" placeholder="Apellido">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="usuario" placeholder="Nombre Usuario">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="contra" placeholder="Contraseña">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="departamento" placeholder="Departamento">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="puesto" placeholder="Cargo">
+  </div>
+  <div class="mb-3">
+    <label class="text-center">Imagen De Perfil</label>
+    <input type="file" class="form-control" name="imagen" placeholder="img_perfil">
+  </div>
+  <button type="submit" class="btn btn-success">Registrar</button>
+
+</form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </body>
 <!--<script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
 <!--<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>-->
