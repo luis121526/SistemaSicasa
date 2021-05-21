@@ -62,7 +62,13 @@ $(document).ready(function(){
   }
   ?>
 </table>
+</div>
+<div class="crud">
+<button class="btn btn-success"> Agregar</button>
+<button class="btn btn-warning"> Modificar</button>
+<button class="btn btn-danger"> Eliminar</button>
 
+</div>
 
 </body>
 <script >
