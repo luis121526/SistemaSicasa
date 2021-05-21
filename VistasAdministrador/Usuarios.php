@@ -32,6 +32,23 @@ $(document).ready(function(){
 </script>
 <body>
 	<div id="menu">
+  <div class="perfil"> 
+    <?php
+		          $sql="SELECT *FROM usuarios WHERE nombre_usuario='$persona'";
+		          $stm=$conexion->query($sql);
+		          while ($datos=$stm->fetch_object()) {
+		            $imagen = base64_encode($datos->img_perfil);
+		      }
+       	?>
+       	<img  class="perf" src="data:image/jpeg; base64 ,<?php echo $imagen ?> " width="60" height="60" class="img-fluid">
+         <div class="a">
+          <img class="activo" src="../img/activo.png">
+          </div>
+          <div class="b">
+          <label><?php echo $persona   ?></label>
+          </div>
+  </div>
+  <br>
   <div class="list-group">
   <button type="button" onclick="location.href='../VistasAdministrador/Dashboard.php'" class="list-group-item list-group-item-action ">Dashboard</button>
   <button type="button" class="list-group-item list-group-item-action">Reportes (Incidencias)</button>

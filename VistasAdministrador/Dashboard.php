@@ -256,7 +256,12 @@ $(document).ready(function(){
 		      }
        	?>
        	<img  class="perf" src="data:image/jpeg; base64 ,<?php echo $imagen ?> " width="60" height="60" class="img-fluid">
-
+         <div class="a">
+          <img class="activo" src="../img/activo.png">
+          </div>
+          <div class="b">
+          <label><?php echo $persona   ?></label>
+          </div>
   </div>
     <br>
   <div class="list-group">

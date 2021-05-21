@@ -247,6 +247,7 @@ $(document).ready(function(){
   </section>-->
   <body>
 	<div id="menu">
+  
     <div class="perfil"> 
     <?php
 		          $sql="SELECT *FROM usuarios WHERE nombre_usuario='$persona'";
@@ -256,13 +257,18 @@ $(document).ready(function(){
 		      }
        	?>
        	<img  class="perf" src="data:image/jpeg; base64 ,<?php echo $imagen ?> " width="60" height="60" class="img-fluid">
-
+          <div class="a">
+          <img class="activo" src="../img/activo.png">
+          </div>
+          <div class="b">
+          <label><?php echo $persona   ?></label>
+          </div>
   </div>
     <br>
   <div class="list-group">
   <button type="button" onclick="location.href='../VistasUsuarios/Dashboard.php'" class="list-group-item list-group-item-action ">Dashboard</button>
   <button type="button" onclick="location.href='../VistasUsuarios/Dashboard.php'" class="list-group-item list-group-item-action ">Generar Nuevo Ticket</button>
-  <button type="button" onclick="location.href='../Logica/cerrar.php'" class="list-group-item list-group-item-action ">Cerrar Sesion</button>
+  <button class="btn btn-danger" type="button" onclick="location.href='../Logica/cerrar.php'" class="list-group-item list-group-item-action ">Cerrar Sesion</button>
 
 </div>
 
