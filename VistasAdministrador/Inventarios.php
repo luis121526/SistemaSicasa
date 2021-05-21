@@ -11,8 +11,9 @@ $persona=$_SESSION['logueo'];
 </head>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../css/estilo.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="../js/jquer.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
+<script type="text/javascript" src="../DataTables/datatables.min.js"></script>
 <script>
 $(document).ready(function(){
   $("body").hide().fadeIn(900);
@@ -61,10 +62,9 @@ $(document).ready(function(){
   }
   ?>
 </table>
-</div>
+
+
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script >
  $(document).ready( function () {
 
