@@ -18,8 +18,8 @@ header("Location:../VistasAdministrador/Dashboard.php");
 }
 else
 if($array['id_cargo']==2){
-echo "hola cliente";
-}
+	$_SESSION['logueo']=$var1;
+	header("Location:../VistasUsuarios/Dashboard.php");}
 else{
 	echo "<script>
 	alert('No puedes acceder');

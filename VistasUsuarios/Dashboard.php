@@ -260,15 +260,81 @@ $(document).ready(function(){
   </div>
     <br>
   <div class="list-group">
-  <button type="button" onclick="location.href='../VistasAdministrador/Dashboard.php'" class="list-group-item list-group-item-action ">Dashboard</button>
-  <button type="button" class="list-group-item list-group-item-action">Reportes (Incidencias)</button>
-  <button type="button" onclick="location.href='../VistasAdministrador/Usuarios.php'" class="list-group-item list-group-item-action">Usuarios</button>
-  <button type="button" class="list-group-item list-group-item-action">Estadísticas</button>
-  <button type="button" onclick="location.href='../VistasAdministrador/Inventarios.php'"class="list-group-item list-group-item-action">Inventarios</button>
-  <button class="btn btn-danger"type="button" onclick="location.href='../Logica/cerrar.php'" class="list-group-item list-group-item-action ">Cerrar Sesion</button>
+  <button type="button" onclick="location.href='../VistasUsuarios/Dashboard.php'" class="list-group-item list-group-item-action ">Dashboard</button>
+  <button type="button" onclick="location.href='../VistasUsuarios/Dashboard.php'" class="list-group-item list-group-item-action ">Generar Nuevo Ticket</button>
+  <button type="button" onclick="location.href='../Logica/cerrar.php'" class="list-group-item list-group-item-action ">Cerrar Sesion</button>
 
 </div>
+
 	</div>
+
+  <!--aqui termina el menu-->
+  <!--inicia ticket-->
+  <div id="ticket">
+  <div class="anuncio">
+ <label class="text-center">Generar Nuevo Ticket</label>
+  </div>
+  <br>
+  <form method="POST" action="https://www.google.com">
+  <div class="row g-3 align-items-center">
+  <div class="col-2">
+    <label for="inputPassword6" class="col-form-label">Fecha</label>
+  </div>
+  <div class="col-auto">
+    <input type="date" name="fecha" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+ 
+</div>
+<div class="row g-3 align-items-center">
+  <div class="col-2">
+    <label for="inputPassword6" class="col-form-label">Nombre</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" name="nombre" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+ 
+</div>
+<div class="row g-3 align-items-center">
+  <div class="col-2">
+    <label for="inputPassword6" class="col-form-label">Correo</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" name="correo" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+ 
+</div>
+<div class="row g-3 align-items-center">
+  <div class="col-2">
+    <label for="inputPassword6" class="col-form-label">Departamento</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" name="depa" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+ 
+</div>
+<div class="row g-3 align-items-center">
+  <div class="col-2">
+    <label for="inputPassword6" class="col-form-label">Asunto</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" name="asunto" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+ 
+</div>
+<div class="row g-3 align-items-center">
+  <div class="col-2">
+    <label for="inputPassword6" class="col-form-label">Descripcion Problema</label>
+  </div>
+  <div class="col-8">
+  <textarea class="form-control" name="problema" form="usrform"></textarea>  </div>
+ 
+</div>
+<div class="row g-3 align-items-center">
+  <div class="col-5">
+  <input type="submit" class="btn btn-success" name="enviar"  value="Abrir Ticket">  </div>
+</div>
+</form>
+   </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>

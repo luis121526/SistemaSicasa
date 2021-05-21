@@ -1,7 +1,15 @@
 <?php 
 session_start();
- include '../Logica/conectbd.php';
-$persona=$_SESSION['logueo'];
+    //Si existe la sesión "cliente"..., la guardamos en una variable.
+    if (isset($_SESSION['logueo'])){
+        $persona = $_SESSION['logueo'];
+    }else{
+ header('Location: ../index.php');//Aqui lo redireccionas al lugar que quieras.
+     die() ;
+
+    }
+    include '../Logica/conectbd.php';
+
   ?>
 <!DOCTYPE html>
 <html>
@@ -30,6 +38,8 @@ $(document).ready(function(){
   <button type="button" onclick="location.href='../VistasAdministrador/Usuarios.php'" class="list-group-item list-group-item-action">Usuarios</button>
   <button type="button" class="list-group-item list-group-item-action">Estadísticas</button>
   <button type="button" onclick="location.href='../VistasAdministrador/Inventarios.php'" class="list-group-item list-group-item-action">Inventarios</button>
+  <button class="btn btn-danger"type="button" onclick="location.href='../Logica/cerrar.php'" class="list-group-item list-group-item-action ">Cerrar Sesion</button>
+
 </div>
 	</div>
 	<div class="mitabla">
@@ -75,7 +85,7 @@ $(document).ready(function(){
 <div class="crud">
 <!-- Trigger the modal with a button -->
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregar">Agregar</button>
-<button class="btn btn-warning"> Modificar</button>
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modificar">Modificar</button>
 <button class="btn btn-danger"> Eliminar</button>
 
 </div>
@@ -116,6 +126,49 @@ $(document).ready(function(){
     <input type="file" class="form-control" name="imagen" placeholder="img_perfil">
   </div>
   <button type="submit" class="btn btn-success">Registrar</button>
+
+</form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal modificar -->
+<div id="modificar" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal  agregar  contenido-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Modificación De Datos</h4>
+      </div>
+      <div class="modal-body">
+      <form method="POST" action="../Logica/altas_usuarios.php">
+  <div class="mb-3">
+    <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="apellido" placeholder="Apellido">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="usuario" placeholder="Nombre Usuario">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="contra" placeholder="Contraseña">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="departamento" placeholder="Departamento">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="puesto" placeholder="Cargo">
+  </div>
+  <div class="mb-3">
+    <label class="text-center">Imagen De Perfil</label>
+    <input type="file" class="form-control" name="imagen" placeholder="img_perfil">
+  </div>
+  <button type="submit" class="btn btn-warning">Modificar</button>
 
 </form>
       </div>

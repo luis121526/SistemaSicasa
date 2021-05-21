@@ -1,7 +1,15 @@
 <?php 
 session_start();
- include '../Logica/conectbd.php';
-$persona=$_SESSION['logueo'];
+    //Si existe la sesión "cliente"..., la guardamos en una variable.
+    if (isset($_SESSION['logueo'])){
+        $persona = $_SESSION['logueo'];
+    }else{
+ header('Location: ../index.php');//Aqui lo redireccionas al lugar que quieras.
+     die() ;
+
+    }
+    include '../Logica/conectbd.php';
+
   ?>
 <!DOCTYPE html>
 <html>
@@ -27,6 +35,8 @@ $(document).ready(function(){
   <button type="button" onclick="location.href='../VistasAdministrador/Usuarios.php'" class="list-group-item list-group-item-action">Usuarios</button>
   <button type="button" class="list-group-item list-group-item-action">Estadísticas</button>
   <button type="button" onclick="location.href='../VistasAdministrador/Inventarios.php'" class="list-group-item list-group-item-action">Inventarios</button>
+  <button class="btn btn-danger"type="button" onclick="location.href='../Logica/cerrar.php'" class="list-group-item list-group-item-action ">Cerrar Sesion</button>
+
 </div>
 	</div>
 	<div class="mitabla">
