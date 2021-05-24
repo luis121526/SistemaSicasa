@@ -1,3 +1,14 @@
+:root{
+	/*colores sicasa*/
+	--base: #f8f9f9 ;
+	--color1 :  #2596be;
+	--color2 : #173686;
+	--color3 : #385542;
+	--gris:  #aeb6bf ;
+}
+body{
+	font-family: 'Nunito', sans-serif ;
+}
 #contenedor1{
 	background-color: #1b85c8;
 	max-width: 500px;
@@ -34,7 +45,6 @@
 	background-color: white;
 	padding: 40px;
 	border:solid 2.5px;
-	font-family: verdana,arial;
 	font-size: 14px;
 
 }
@@ -68,7 +78,6 @@
 }
 .fuente{
 	font-size: 15px;
-	font-family: verdana,arial;
 	font-style: normal;
 	font-weight: bold;
 	padding: 20px;
@@ -126,4 +135,10 @@ font-size: 20px;
 	border-radius: 5px;
 	text-align: center;
 	width: 100px;
+}
+.barra-principal{
+    margin:0px 0px 10px 0px;
+	background-color: var(--color1);
+}
+.barra-principal .logo-sicasa{
 }

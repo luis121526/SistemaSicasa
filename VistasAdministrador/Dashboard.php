@@ -1,34 +1,49 @@
-<?php 
-session_start();
-    //Si existe la sesión "cliente"..., la guardamos en una variable.
-    if (isset($_SESSION['logueo'])){
-        $persona = $_SESSION['logueo'];
-    }else{
- header('Location: ../index.php');//Aqui lo redireccionas al lugar que quieras.
-     die() ;
+      <!--logica de php para validar accesos de usuarios-->
+      <?php 
+        session_start();
+            //Si existe la sesión "cliente"..., la guardamos en una variable.
+            if (isset($_SESSION['logueo'])){
+                $persona = $_SESSION['logueo'];
+            }else{
+        header('Location: ../index.php');//Aqui lo redireccionas al lugar que quieras.
+            die() ;
 
-    }
-    include '../Logica/conectbd.php';
+            }
+            include '../Logica/conectbd.php';
 
-  ?>
+      ?>
+      <!--aqui termina la seccion de validar usuarios-->    
 <!DOCTYPE html>
 <html>
 <head>
+  <!--librerias-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dashboard</title>
   <link rel="icon"  href="../img/favicon.ico">
+  <link rel="stylesheet" href="../css/normalize.css"> 
   <link rel="preload" href="../css/bootstrap-grid.min.css" as="styles">
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/estilo.css" as="styles">
   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+  <!--librerias fin-->
 </head>
 <script>
 $(document).ready(function(){
   $("body").hide().fadeIn(900);
 })
 </script>
+<header>
+  <div class="barra-principal">
+  <div class="logo-sicasa">
+   <p>sd</p>
+  </div> 
+  </div>
+</header>
+
 <body>
 
   <body>
@@ -60,10 +75,12 @@ $(document).ready(function(){
 
 </div>
 	</div>
+  <!--menu de opciones totales-->
+      
+  <main>
 
+  </main>
+        
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-
 </body>
 </html>

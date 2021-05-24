@@ -17,8 +17,11 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Usuarios</title>
   <link rel="icon"  href="../img/favicon.ico">
+  <link rel="stylesheet" href="../css/normalize.css"> 
   <link rel="preload" href="../css/bootstrap.min.css" as="styles">
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <script src="../js/jquer.min.js"></script>
   <link rel="preload" href="../Datatables/datatables.min.css" as="styles">
   <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
