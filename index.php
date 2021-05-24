@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon"  href="img/favicon.ico">
 	<link rel="preload" href="css/bootstrap.min.css" as="styles">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
