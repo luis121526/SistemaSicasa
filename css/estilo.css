@@ -56,12 +56,12 @@ body{
  padding: 70px;
  border-radius: 10px;
 }
-#menu{
-  height: 700px;
-  width: 235px;
-  background-color: #1b85c8;
-  margin-right: auto;
-  padding: 5px;
+.menu3{
+ background-color:var(--color1);
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 69rem;
+margin-bottom: auto;
 }
 #titulo{
 	margin-top: 30px;
@@ -135,10 +135,4 @@ font-size: 20px;
 	border-radius: 5px;
 	text-align: center;
 	width: 100px;
-}
-.barra-principal{
-    margin:0px 0px 10px 0px;
-	background-color: var(--color1);
-}
-.barra-principal .logo-sicasa{
 }

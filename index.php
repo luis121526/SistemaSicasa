@@ -17,7 +17,8 @@ $(document).ready(function(){
   $("body").hide().fadeIn(900);
 })
 </script>
-<body>	<div id="contenedor1">
+<body>
+	<div id="contenedor1">
 		<form method="POST" action="Logica/valida.php">
 			<div class="logo">
 			<div class="text-center">

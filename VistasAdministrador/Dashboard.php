@@ -36,18 +36,12 @@ $(document).ready(function(){
   $("body").hide().fadeIn(900);
 })
 </script>
-<header>
-  <div class="barra-principal">
-  <div class="logo-sicasa">
-   <p>sd</p>
-  </div> 
-  </div>
-</header>
+
 
 <body>
 
   <body>
-	<div id="menu">
+	<div class="menu3">
     <div class="perfil"> 
     <?php
 		          $sql="SELECT *FROM usuarios WHERE nombre_usuario='$persona'";
