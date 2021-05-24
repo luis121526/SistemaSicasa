@@ -3,10 +3,12 @@
 <head>
 	<title>Login</title>
 	<link rel="icon"  href="img/favicon.ico">
+	<link rel="preload" href="css/bootstrap.min.css" as="styles">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="preload" href="css/estilo.css" as="styles">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/jquer.min.js"></script>
 </head>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
-<script src="js/jquer.min.js"></script>
 <script>
 $(document).ready(function(){
   $("body").hide().fadeIn(900);

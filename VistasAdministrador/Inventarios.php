@@ -15,13 +15,17 @@ session_start();
 <html>
 <head>
 	<title>Inventarios</title>
-  
+  <link rel="icon"  href="../img/favicon.ico">
+  <link rel="preload" href="../css/bootstrap.min.css" as="styles">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <script src="../js/jquer.min.js"></script>
+  <link rel="preload" href="../Datatables/datatables.min.css" as="styles">
+  <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
+  <script type="text/javascript" src="../DataTables/datatables.min.js"></script>
+  <link rel="preload" href="../css/estilo.css" as="styles">
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
 </head>
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-<script src="../js/jquer.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
-<script type="text/javascript" src="../DataTables/datatables.min.js"></script>
 <script>
 $(document).ready(function(){
   $("body").hide().fadeIn(900);

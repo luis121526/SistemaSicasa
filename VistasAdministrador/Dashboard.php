@@ -15,11 +15,14 @@ session_start();
 <html>
 <head>
 	<title>Dashboard</title>
+  <link rel="icon"  href="../img/favicon.ico">
+  <link rel="preload" href="../css/bootstrap-grid.min.css" as="styles">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/estilo.css" as="styles">
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 </head>
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
 $(document).ready(function(){
   $("body").hide().fadeIn(900);
