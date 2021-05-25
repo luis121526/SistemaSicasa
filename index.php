@@ -36,6 +36,7 @@ $(document).ready(function(){
 		  <button type="submit" class="btn btn-success">Accesar</button>
 		</form>
 	</div>
+	<!--hgg-->
 
 </body>
 </html>
