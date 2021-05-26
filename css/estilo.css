@@ -7,7 +7,26 @@
 	--gris:  #aeb6bf ;
 }
 body{
-	font-family: 'Nunito', sans-serif ;
+	font-family: 'Pattaya', sans-serif;
+	font-size: 20px;
+}
+.he{
+	background-color: var(--color1) ;
+	text-align: center;
+	color: #fff;
+}
+.contenedorindex{
+	background-color: var(--base);
+	text-align: center;
+	padding: 9px;
+	margin: 130px auto 190px auto;
+}
+
+.footerindex{
+	background-color: var(--color1);
+	margin: 0px auto 0px auto;
+	font-size: 14px;
+	color: #fff;
 }
 #contenedor1{
 	background-color: #1b85c8;
