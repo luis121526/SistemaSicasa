@@ -55,8 +55,14 @@ $(document).ready(function(){
 					</div>
 			</fieldset>
 		</form>
+<<<<<<< HEAD
 		</div>
 	</main>
+=======
+	</div>
+	<!--hgg-->
+
+>>>>>>> b08d38e6d1816e3741df2a22ad3378ff8046c603
 </body>
 <footer class="footerindex"> 
 Copyright &reg; 2021-<script type="text/javascript">document.write(new Date().getFullYear());
