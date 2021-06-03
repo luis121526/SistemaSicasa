@@ -156,3 +156,20 @@ font-size: 20px;
 	text-align: center;
 	width: 100px;
 }
+
+.perfil_empresa{
+	background-color: var(--color1);
+	font-family: 'Pattaya', sans-serif;
+	color: #fff;
+	padding: 2.5px;
+	font-size: 14px;
+	margin: 0px auto 0px auto;
+}
+/*
+.contenedor1{
+	margin: 0px 185px 0px 0px;
+}
+.contenedor2{
+	margin: 0px 0px 0px 160px;
+}
+*/

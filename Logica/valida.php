@@ -14,7 +14,7 @@ else{
 $array=mysqli_fetch_array($query1);
 if($array['id_cargo']==1){
 $_SESSION['logueo']=$var1;
-header("Location:../VistasAdministrador/Dashboard.php");
+header("Location:../VistasUsuariosComun/Dashboard.php");
 }
 else
 if($array['id_cargo']==2){
