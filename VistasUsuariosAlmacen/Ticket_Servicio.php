@@ -23,6 +23,7 @@ else{
     <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.js"/>
     <script type="text/javascript" src="../DataTables/datatables.min.js"></script>
     <script src="../js/jquer.min.js"></script>
+   
     <title>Dashboard</title>
 </head>
 <header>
@@ -192,13 +193,21 @@ else{
                 </section>
                 </section>
  
-</main>           
+</main>  
+
+
         <footer class="footerindex"> 
         Copyright &reg; 2021-<script type="text/javascript">document.write(new Date().getFullYear());
         </script> CorpoSupport - Todos los derechos reservados.
         </footer>
         </body>
-        
+        <script>var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        })
+        </script>
 </html>
 <?php
 }

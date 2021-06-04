@@ -22,7 +22,9 @@ else{
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.js"/>
     <script type="text/javascript" src="../DataTables/datatables.min.js"></script>
-    <script src="../js/jquer.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <title>Dashboard</title>
 </head>
 <header>
@@ -170,12 +172,40 @@ else{
                     
                     <?php  }?>
                     <tfooter>
-                        <td><button class="btn btn-success">Agregar</button></td>
+                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#nuevo">
+                            Agregar
+                        </button></td>
                     </tfooter>
                     </table> 
                 </section>
  
-</main>           
+</main>   
+<!--modal-->
+<div class="modal fade" id="nuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">Nuevo Articulo</h4>
+			</div>
+			<div class="modal-body">
+            <form method="POST" action="../Logica/altas_articulos.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="articulo"  placeholder="Nombre Articulo">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="descripcion" placeholder="Descripcion Articulo">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="cantidad" placeholder="Ingresa Cantidad Articulos">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--modal  -->
         <footer class="footerindex"> 
         Copyright &reg; 2021-<script type="text/javascript">document.write(new Date().getFullYear());
         </script> CorpoSupport - Todos los derechos reservados.
