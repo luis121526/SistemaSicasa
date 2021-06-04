@@ -146,41 +146,41 @@ else{
                     </svg>
                 </section>
                 <section class="col-10">
-                <form>
+                <form method="POST" action="../Logica/Correos.php">
                     <legend class="text-center">Describenos Tu Problema</legend>
                 <div class="row">
                     <div class="col">
-                    <input type="text" class="form-control" placeholder="Departamento">
+                    <input type="text" class="form-control" placeholder="Departamento" name="departamento">
                     </div>
                     <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre Completo">
-                    </div>
-                    
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col">
-                    <input type="text" class="form-control" placeholder="Correo">
-                    </div>
-                    <div class="col">
-                    <input type="text" class="form-control" placeholder="Empresa">
+                    <input type="text" class="form-control" placeholder="Nombre Completo" name="nombre">
                     </div>
                     
                 </div>
                 <br>
                 <div class="row">
                     <div class="col">
-                    <input type="text" class="form-control" placeholder="Telefono">
+                    <input type="text" class="form-control" placeholder="Correo" name="correo">
                     </div>
                     <div class="col">
-                    <input type="text" class="form-control" placeholder="Asunto">
+                    <input type="text" class="form-control" placeholder="Empresa" name="empresa">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Telefono" name="telefono">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Asunto" name="asunto">
                     </div>
                     
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Cuerpo De Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" name="problema" rows="3"></textarea>
                 </div>
                 <hr>
                 <div class="boton">
