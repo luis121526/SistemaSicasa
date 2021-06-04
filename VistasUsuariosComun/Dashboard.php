@@ -16,6 +16,7 @@ else{
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="preload" href="../css/estilo.css" as="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <header>
@@ -57,9 +58,64 @@ else{
 </div>
     </nav>
 </header>
-<body>
-    
-</body>
+        <body>
+            <main class="contenedorindex2 ">
+                <div class="row container-fluid">
+                <section class="col-10">
+                <form>
+                    <legend class="text-center">Describenos Tu Problema</legend>
+                <div class="row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Departamento">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre Completo">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Correo">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Empresa">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Telefono">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Asunto">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Cuerpo De Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                </form>
+                </section>
+                <section class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="13" rx="2" width="4" height="6" />
+                    <rect x="16" y="13" rx="2" width="4" height="6" />
+                    <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                    <path d="M18 19a6 3 0 0 1 -6 3" />
+                    </svg>
+                </section>
+            </div>
+            </main>
+        <footer class="footerindex"> 
+        Copyright &reg; 2021-<script type="text/javascript">document.write(new Date().getFullYear());
+        </script> CorpoSupport - Todos los derechos reservados.
+        </footer>
+        </body>
 </html>
 <?php
 }

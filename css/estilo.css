@@ -22,13 +22,21 @@ body{
 	margin: 130px auto 190px auto;
 	font-size: 20px;
 }
-
+.contenedorindex2{
+	background-color: var(--color1) ;
+	text-align: center;
+	padding: 5px;
+	margin: 50px auto 200px auto;
+	font-size: 15px;
+	color: #fff;
+}
 .footerindex{
 	background-color: var(--color1);
 	margin: 0px auto 0px auto;
 	font-size: 14px;
 	color: #fff;
 }
+
 #contenedor1{
 	background-color: #1b85c8;
 	max-width: 500px;

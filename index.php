@@ -12,7 +12,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 	<link rel="preload" href="css/estilo.css" as="styles">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">	<script src="js/jquer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">	
+	<script src="js/jquer.min.js"></script>
 </head>
 <script>
 $(document).ready(function(){
@@ -57,11 +58,12 @@ $(document).ready(function(){
 		</form>
 		</div>
 	</main>
-</body>
-<footer class="footerindex"> 
+	<footer class="footerindex"> 
 Copyright &reg; 2021-<script type="text/javascript">document.write(new Date().getFullYear());
 </script> CorpoSupport - Todos los derechos reservados.
 </footer>
+</body>
+
 </html>
 
 
