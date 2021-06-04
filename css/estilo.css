@@ -72,3 +72,11 @@ body{
 	background-color: var(--color1);
 	
 }
+.barra button{
+	color: white;
+	font-family:'Tinos', serif; 
+	font-size: 14px;
+}
+.boton{
+	text-align: center;
+}

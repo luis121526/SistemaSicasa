@@ -19,6 +19,8 @@ else{
     <link rel="preload" href="../css/estilo.css" as="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <script src="../js/jquer.min.js"></script>
+
     <title>Dashboard</title>
 </head>
 <header>
@@ -61,6 +63,11 @@ else{
     </nav>
 </header>
         <body>
+            <script>
+        $(document).ready(function(){
+            $("body").hide().fadeIn(900);
+            })
+            </script>
             <main class="contenedorindex2 ">
                 <div class="row container-fluid">
                 <section class="col">
@@ -108,6 +115,10 @@ else{
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Cuerpo De Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <hr>
+                <div class="boton">
+                    <input type="submit" name="enviar" value="Solicitar Ticket" class="btn btn-success">
                 </div>
                 </form>
                 </section>

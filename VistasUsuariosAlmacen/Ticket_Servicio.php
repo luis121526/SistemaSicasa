@@ -133,38 +133,63 @@ else{
                        
                 </section>
                 <section class="col">
-                    <h3 class="text-center">Inventario General En Almacen  #NombreAlmacen</h3>
-                    <hr>
-             <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Articulo</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Stock Inicial</th>
-                        <th scope="col">Entradas</th>
-                        <th scope="col">Salidas</th>
-                        <th scope="col">Stock Total</th>
-                        </tr>
-                    </thead>
-                    <?php
-                    $consulta1=mysqli_query($conexion,"SELECT *FROM inventarios");
-                    while($fila=mysqli_fetch_assoc($consulta1)){
-                    ?>
-                    <tbody>
-                        <tr>
-                        <td><?php echo $fila['codigo'] ?></td>
-                        <td><?php echo $fila['articulo'] ?></td>
-                        <td><?php echo $fila['descripcion'] ?></td>
-                        <td><?php echo $fila['stock_ini'] ?></td>
-                        <td><?php echo $fila['entradas'] ?></td>
-                        <td><?php echo $fila['salidas'] ?></td>
-                        <td><?php echo $fila['total'] ?></td>
-                        </tr>
-                        
-                    </tbody>
-                    <?php  }?>
-                    </table> 
+                    <section class="contenedorindex2 ">
+                <div class="row container-fluid">
+                <section class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="13" rx="2" width="4" height="6" />
+                    <rect x="16" y="13" rx="2" width="4" height="6" />
+                    <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                    <path d="M18 19a6 3 0 0 1 -6 3" />
+                    </svg>
+                </section>
+                <section class="col-10">
+                <form>
+                    <legend class="text-center">Describenos Tu Problema</legend>
+                <div class="row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Departamento">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre Completo">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Correo">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Empresa">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Telefono">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Asunto">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Cuerpo De Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <hr>
+                <div class="boton">
+                    <input type="submit" name="enviar" value="Solicitar Ticket" class="btn btn-success">
+                </div>
+                </form>
+                </section>
+                
+            </div>
+                </section>
                 </section>
  
 </main>           
