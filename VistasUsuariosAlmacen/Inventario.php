@@ -116,7 +116,7 @@ else{
                         <line x1="13" y1="16" x2="15" y2="16" />
                         </svg>
                         </span>
-                        <button class="btn btn-info btn-sm"  onclick="location.href='../VistasUsuariosAlmacen/Inventario.php'">Inventarios</button>
+                        <button class="btn btn-info btn-sm" onclick="location.href='../VistasUsuariosAlmacen/Inventario.php'">Inventarios</button>
                         </div>
                         <hr>
                         <div>
@@ -145,6 +145,8 @@ else{
                         <th scope="col">Entradas</th>
                         <th scope="col">Salidas</th>
                         <th scope="col">Stock Total</th>
+                        <th scope="col">Accion</th>
+                        <th scope="col">Accion</th>
                         </tr>
                     </thead>
                     <?php
@@ -160,10 +162,16 @@ else{
                         <td><?php echo $fila['entradas'] ?></td>
                         <td><?php echo $fila['salidas'] ?></td>
                         <td><?php echo $fila['total'] ?></td>
+                        <td><button class="btn btn-warning">Modificar</button></td>
+                        <td><button class="btn btn-danger">Eliminar</button></td>
                         </tr>
                         
                     </tbody>
+                    
                     <?php  }?>
+                    <tfooter>
+                        <td><button class="btn btn-success">Agregar</button></td>
+                    </tfooter>
                     </table> 
                 </section>
  

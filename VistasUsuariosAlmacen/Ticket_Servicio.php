@@ -116,7 +116,7 @@ else{
                         <line x1="13" y1="16" x2="15" y2="16" />
                         </svg>
                         </span>
-                        <button class="btn btn-info btn-sm">Inventarios</button>
+                        <button class="btn btn-info btn-sm" onclick="location.href='../VistasUsuariosAlmacen/Inventario.php'">Inventarios</button>
                         </div>
                         <hr>
                         <div>
