@@ -7,8 +7,9 @@
 	--gris:  #aeb6bf ;
 }
 body{
-	font-family: 'Pattaya', sans-serif;
-	font-size: 20px;
+	font-family:'Tinos', serif;
+	font-size: 15px;
+	padding: 0;
 }
 .he{
 	background-color: var(--color1) ;
@@ -19,12 +20,21 @@ body{
 	background-color: var(--base);
 	text-align: center;
 	padding: 9px;
-	margin: 130px auto 190px auto;
+	margin: 157px auto 190px auto;
 	font-size: 20px;
 }
+.contenedordashalm{
+	background-color: #3d6792 ;
+	text-align: right;
+	padding: 5px;
+	margin: 50px auto auto auto;
+	font-size: 15px;
+	color: #fff;
+}
+
 .contenedorindex2{
-	background-color: var(--color1) ;
-	text-align: center;
+	background-color: #3d6792 ;
+	text-align: right;
 	padding: 5px;
 	margin: 50px auto 200px auto;
 	font-size: 15px;
@@ -37,141 +47,13 @@ body{
 	color: #fff;
 }
 
-#contenedor1{
-	background-color: #1b85c8;
-	max-width: 500px;
-	min-width: 300px;
-	max-height: 500px;
-	min-height: 400px;
-	text-align: center;
-	margin-left: auto;
-	margin-top: 70px;
-	margin-bottom: auto;
-	margin-right: auto;
-	border-radius: 35px;
-    padding: 80px;
-}
-.logo{
-	max-width: 150px;
-	min-width: 75px;
-	max-height: 150px;
-	min-height: 75px;
-	margin-right: auto;
-	margin-bottom: 50px;
-	margin-left: auto;
-	border-radius: 35px;
-}
-#base{
-	margin-top: 100px;
-	margin-left: auto;
-	margin-bottom:auto;
-	margin-right: auto;
-	max-width: 500px;
-	min-width: 300px;
-	max-height: all;
-	min-height: 400px;
-	background-color: white;
-	padding: 40px;
-	border:solid 2.5px;
-	font-size: 14px;
-
-}
-.mitabla{
- height: auto;
- width: auto;
- margin-left: 170px;
- margin-top: -750px;
- padding: 70px;
- border-radius: 10px;
-}
-.menu3{
- background-color:var(--color1);
-margin-top: 0px;
-margin-left: 0px;
-margin-right: 69rem;
-margin-bottom: auto;
-}
-#titulo{
-	margin-top: 30px;
-	margin-left: auto;
-	margin-bottom:-60px;
-	margin-right: auto;
-	background-color: white;
-	max-width: 1000px;
-	min-width: 300px;
-	max-height: 100px;
-	min-height: 100px;
-	border:solid 2.5px;
-
-}
-.fuente{
-	font-size: 15px;
-	font-style: normal;
-	font-weight: bold;
-	padding: 20px;
-}
-
-.perfil{
-  background-color: #fff;
-  height: 100px;
-  width: auto;
-  border-radius: 10px;
-}
-.perf{
-  border-radius: 10px;
-  margin-left: 30px;
-  margin-top: 15px;
-  
-}
-.crud{
-	height: 39px;
-	width: 1040px;
-	margin-left: 236px;
-	margin-top: -60px;
-}
-#ticket{
-	height: 450px;
-	width: 900px;
-	background-color: white;
-	margin-left: 300px;
-	margin-top: -620px;
-border-style: solid;
-border-radius: 10px;
-padding: 5px;
-font-size: 20px;
-
-
-}
-.anuncio{
-	background-color: #85c1e9 ;
-	border-radius: 5px;
-	height: 40px;
-	color: cornsilk;
-	text-align: center;
-	font-size: 20px;
-}
-.activo{
-	height: 30px;
-	margin-left: 100px;
-	margin-top: -117px;
-}
-.b{
-	margin-left: 100px;
-	margin-top: -50px;
-	background-color:  #28b463 ;
-	color: #fff;
-	border-radius: 5px;
-	text-align: center;
-	width: 100px;
-}
-
 .perfil_empresa{
 	background-color: var(--color1);
-	font-family: 'Pattaya', sans-serif;
 	color: #fff;
 	padding: 2.5px;
 	font-size: 14px;
 	margin: 0px auto 10px auto;
+	font-family: 'Tinos', serif;
 }
 .contenedor1{
 	margin: 10px auto;
@@ -184,4 +66,9 @@ font-size: 20px;
 	height: 9px;
 	width: 9px;
 	font-size: 15px;
+}
+.barra{
+	text-align: left;
+	background-color: var(--color1);
+	
 }

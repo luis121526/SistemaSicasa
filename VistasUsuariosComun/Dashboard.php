@@ -12,6 +12,8 @@ else{
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../css/normalize.css" as="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="preload" href="../css/bootstrap.min.css" as="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="preload" href="../css/estilo.css" as="stylesheet">
@@ -61,6 +63,15 @@ else{
         <body>
             <main class="contenedorindex2 ">
                 <div class="row container-fluid">
+                <section class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="13" rx="2" width="4" height="6" />
+                    <rect x="16" y="13" rx="2" width="4" height="6" />
+                    <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                    <path d="M18 19a6 3 0 0 1 -6 3" />
+                    </svg>
+                </section>
                 <section class="col-10">
                 <form>
                     <legend class="text-center">Describenos Tu Problema</legend>
@@ -100,15 +111,7 @@ else{
                 </div>
                 </form>
                 </section>
-                <section class="col">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="4" y="13" rx="2" width="4" height="6" />
-                    <rect x="16" y="13" rx="2" width="4" height="6" />
-                    <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
-                    <path d="M18 19a6 3 0 0 1 -6 3" />
-                    </svg>
-                </section>
+                
             </div>
             </main>
         <footer class="footerindex"> 

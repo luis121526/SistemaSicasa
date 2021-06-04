@@ -19,7 +19,8 @@ header("Location:../VistasUsuariosComun/Dashboard.php");
 else
 if($array['id_cargo']==2){
 	$_SESSION['logueo']=$var1;
-	header("Location:../VistasUsuarios/Dashboard.php");}
+	header("Location:../VistasUsuariosAlmacen/Dashboard.php");
+}
 else{
 	echo "<script>
 	alert('No puedes acceder');

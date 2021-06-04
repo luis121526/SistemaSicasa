@@ -6,12 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon"  href="img/favicon.ico">
-	<link rel="preload" href="css/bootstrap.min.css" as="styles">
+	<link rel="preload" href="css/bootstrap.min.css" as="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-	<link rel="preload" href="css/estilo.css" as="styles">
+	<link rel="preload" href="css/estilo.css" as="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">	
 	<script src="js/jquer.min.js"></script>
 </head>
