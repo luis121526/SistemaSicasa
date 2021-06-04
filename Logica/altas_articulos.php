@@ -19,7 +19,16 @@
   $inserta_articulos=mysqli_query($conexion,"INSERT INTO inventarios (articulo,descripcion,total)
    VALUES ('$valu1', '$valu2','$valu3' );");
   if(!$inserta_articulos){
-      echo "fallo";
+    echo "<script>
+    alert('No se pudieron subir los articulos , vuelve a intentar o contacta al deparamento de TI');
+    location.href='../VistasUsuariosAlmacen/Inventario.php';
+    </script>";
+  }
+  else{
+    echo "<script>
+    alert('Articulos Agregados Correctamente');
+    location.href='../VistasUsuariosAlmacen/Inventario.php';
+    </script>";
   }
 }
   ?>

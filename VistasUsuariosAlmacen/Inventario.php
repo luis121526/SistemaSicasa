@@ -196,9 +196,9 @@ else{
                     <input type="text" class="form-control" name="descripcion" placeholder="Descripcion Articulo">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="cantidad" placeholder="Ingresa Cantidad Articulos">
+                    <input type="number" class="form-control" name="cantidad" placeholder="Ingresa Cantidad Articulos"  >
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-info">Registrar</button>
             </form>
 			</div>
 		</div>
