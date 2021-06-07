@@ -103,7 +103,7 @@ else{
                         <path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
                         </svg>
                         </span>
-                        <button class="btn btn-info btn-sm" onclick="location.href='../VistasUsuariosAlmacen/Ticket_Servicio.php'">Generar Ticket Servicio</button>
+                        <button class="btn btn-info btn-sm" onclick="location.href='../VistasUsuariosAlmacen/Ticket_Servicio.php'">Ticket Servicio</button>
                         </div>
                         <hr>
                         <div>
