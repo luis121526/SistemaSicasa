@@ -13,15 +13,15 @@ else{
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="../css/normalize.css" as="stylesheet">
+    <link rel="preload" href="../css/normalize.css" as="style">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="preload" href="../css/bootstrap.min.css" as="stylesheet">
+    <link rel="preload" href="../css/bootstrap.min.css" as="style">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="preload" href="../css/estilo.css" as="stylesheet">
+    <link rel="preload" href="../css/estilo.css" as="style">
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.js"/>
-    <script type="text/javascript" src="../DataTables/datatables.min.js"></script>
+   <!-- <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.js"/>-->
+   <!-- <script type="text/javascript" src="../DataTables/datatables.min.js"></script>-->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -178,6 +178,7 @@ else{
                     </tfooter>
                     </table> 
                 </section>
+                </div>
  
 </main>   
 <!--modal-->
