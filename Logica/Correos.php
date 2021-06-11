@@ -39,7 +39,6 @@ else{
         mail($para,$titulo,$mensaje);
     }
     else{
-     $q=mysqli_query($conexion,"SELECT id_reporte FROM tickets");   
      echo "<script>
      alert('Ticket De Servicio Generado Exitosamente, Tu petición será atendida a la mayor brevedad posible');
      location.href='../VistasUsuariosAlmacen/Ticket_Servicio.php';
